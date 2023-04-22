@@ -17,7 +17,7 @@ React.js (Frontend Framework)
    ###### 3. setup .env file with 
        ALCHEMY_API_KEY = ""   Note : I use Alchemy node provider!
        PRIVATE_KEY = ""       Note : Use metamask to create a new account and generate the private keys.
-   ###### 4. start developement blockchain
+   ###### 4. start developement blockchain (** incase of hardhat deployment)
        npx hardhat node 
    5. create qatest.sol copy the smartcontract given for test
    ###### 6. compile the smart contract
