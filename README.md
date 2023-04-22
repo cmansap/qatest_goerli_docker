@@ -35,4 +35,9 @@ React.js (Frontend Framework)
        npx hardhat run --network goerli ./scripts/interaction.js
    13. chmod +x run.sh ( to make the bash file executable)
    14. execute ./run.sh
+   
    15.Create Dockerfile
+   
+   16. ###### Run docker build command
+        docker build -t qaengineer-test .
+    
