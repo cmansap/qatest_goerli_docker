@@ -36,7 +36,7 @@ React.js (Frontend Framework)
    13. chmod +x run.sh ( to make the bash file executable)
    14. execute ./run.sh
    
-   15.Create Dockerfile
+   15. Create Dockerfile
    
    16. ###### Run docker build command
         `docker build -t qaengineer-test .`
