@@ -1,2 +1,3 @@
-npx hardhat run --network localhost ./scripts/deploy.js
-npx hardhat run --network localhost ./scripts/interaction.js
+npx hardhat run --network goerli ./scripts/deploy.js
+npx hardhat run --network goerli ./scripts/interaction.js
+

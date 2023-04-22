@@ -16,23 +16,25 @@ async function main() {
     const gsetter = await ethers.getContractAt('GetterSetter', config[chainId].gsetter.address)
     console.log(`GetterSetter fetched: ${gsetter.address}\n`)
 
-    let transaction
+    let setvalue,getvalue
     let value = 789
 
     // Set the value to 789
     setvalue = await gsetter.connect(deployer).setUint256(value)
     await setvalue.wait()
-    
+
     // Get the value
     getvalue = await gsetter.connect(deployer).getUint256()
     console.log(`The values set it to : ${getvalue}`)
 
+    // Creating an Object
     const newObject = {
         contrct_address : gsetter.address ,
         set_value :getvalue.toNumber( ),
         deployer_address : accounts[0].address
     }
 
+    // Writing data to JSON file from the Object
     const jsonString = JSON.stringify(newObject,null,2);
     console.log(jsonString);
 
